@@ -1,0 +1,137 @@
+.container {
+  /* display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 100px, 100px, 1fr min-content; */
+  display: block;
+  margin: 15px;
+  align-items: center;
+  border: 1px solid black;
+  align-items: start;
+}
+.pic {
+  /* grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 3;
+  grid-row-end: 4; */
+  max-height: 350px;
+  max-width: 350px;
+  padding: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.title {
+  /* grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 1; */
+  width: 100%;
+  text-align: center;
+  text-decoration: underline;
+  width: 100%;
+  background-color: lightsteelblue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+.author {
+  /* grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row: 2; */
+  text-align: center;
+}
+.steps {
+  /* grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row: 3;
+  padding-left: 25px;
+  padding-right: 20px; */
+  column-count: auto;
+  padding: 10px;
+}
+
+.ingredients {
+  /* grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row: 3; */
+  max-height: 200px;
+  column-count: 2;
+  padding: 10px;
+}
+
+.outerContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: max-content;
+  justify-content: space-around;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+#searchArea {
+  padding: 5px;
+  text-align: center;
+}
+
+a {
+  padding-left: 5px;
+}
+
+.center {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+#moon {
+  max-height: 40px;
+}
+
+#pageTitle {
+  font-size: 24pt;
+}
+
+#header {
+  /* position: sticky;
+  top: 0; */
+  background-color: lightsteelblue;
+  border: 1px solid black;
+  padding-bottom: 10px;
+}
+
+.theOtherPics {
+  max-height: 200px;
+  max-width: 250px;
+  margin: 10px;
+}
+
+.headers {
+  padding-left: 10px;
+  text-decoration: underline;
+  font-weight: 900;
+  background-color: yellow;
+}
+
+.closeButton {
+  width: 10%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: lightsteelblue;
+  color: red;
+  text-align: center;
+}
+
+.closeButton:hover {
+  background-color: red;
+  cursor: pointer;
+  color: black;
+}
+
+@media only screen and (max-width: 641px) {
+  .outerContainer {
+    display: block;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 50px;
+  }
+}
